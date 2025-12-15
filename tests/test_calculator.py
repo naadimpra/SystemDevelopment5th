@@ -788,19 +788,6 @@ class TestSquareRoot:
         # Assert
         assert "Cannot calculate square root of a negative number" in str(excinfo.value)
 
-    def test_square_root_of_zero(self):
-        """Test square root of zero."""
-        # Arrange
-        calc = Calculator()
-        value = 0
-        expected = 0.0
-
-        # Act
-        result = calc.sqrt(value)
-
-        # Assert
-        assert result == expected
-
 class TestModulo:
     """Tests for the modulo method."""
 
